@@ -41,10 +41,10 @@ THREE.EffectComposer.prototype = {
 
 	},
 
-  getResult: function() {
+  getResultingBuffer: function() {
 
-    var result = this.passes.length % 2 == 0 ? this.renderTarget1 : this.renderTarget2;
-    return result;
+    var buffer = this.passes.length % 2 == 0 ? this.renderTarget1 : this.renderTarget2;
+    return buffer;
 
   },
 
